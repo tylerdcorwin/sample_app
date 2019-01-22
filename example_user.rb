@@ -6,7 +6,7 @@ class User
     @email = attributes[:email]
   end
 
-  def formatted_email
-    "#{@name} <#{@email}>"
+  def formatted_email                   #this method can use the @name/@email variables
+    "#{@name} <#{@email}>"              #because they are scope variables
   end
 end
